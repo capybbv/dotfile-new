@@ -1,0 +1,10 @@
+configuration {
+  font: "Noto Sans 8";
+  location: 0;
+  width: 60;
+}
+
+listview {
+  lines: 12;
+  columns: 3;
+}
