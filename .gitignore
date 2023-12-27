@@ -67,3 +67,7 @@ Pods/
 
 # Karabiner
 .config/karabiner/automatic_backups
+
+# SSH folder
+ssh/
+.ssh/
