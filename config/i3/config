@@ -31,7 +31,7 @@ assign [class=qBittorrent] $ws6
 # ---- Application ----
 #
 # auto start
-exec --no-startup-id hsetroot -fill ~/Pictures/stuff/mountain.jpg
+exec --no-startup-id hsetroot -fill ~/Pictures/wallpaper/capybara.jpg
 exec --no-startup-id ibus-daemon -drxR
 exec --no-startup-id flameshot &
 exec --no-startup-id 1password --slient

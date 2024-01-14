@@ -1,7 +1,7 @@
 [core]
-	excludesfile = ~/.gitignore
-	editor = nvim
-	ignorecase = false
+  excludesfile = ~/.gitignore
+  editor = nvim
+  ignorecase = false
 [push]
   default = simple
 [color]
@@ -38,34 +38,32 @@
 [hub]
   protocol = https
 [user]
-	name = "capybbv"
+  name = "capybbv"
   email = "vothanhsuong123@gmail.com"
-	signingkey = /home/beepbeep/.ssh/id_ed25519_gh_signing.pub
+  signingkey = ~/.ssh/id_ed25519_bb_gh_signing.pub
+[commit]
+  gpgSign = true
 [gpg]
-	format = ssh
+  format = ssh
 [credential]
-	credentialStore = secretservice
-	helper = 
-	helper = /usr/bin/git-credential-manager-core
+  credentialStore = secretservice
+  helper = /usr/bin/git-credential-manager-core
 [diff]
   tool = nvimdiff
 [difftool "nvimdiff"]
-	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "nvimdiff"]
-	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 [ghq]
   root = ~/.ghq
-
 [includeIf "gitdir:~/Workspace/company/"]
   path = .gitconfig-company
-[credential "https://dev.azure.com"]
-	useHttpPath = true
-[init]
-	defaultBranch = main
+[includeIf "gitdir:~/Workspace/bo/"]
+  path = .gitconfig-bo
